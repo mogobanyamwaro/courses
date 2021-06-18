@@ -35,5 +35,27 @@
         </div>
       </div>
     </section>
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">courses</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">offer</a></li>
+      </ul>
+    </nav>
+    <img src="./images/Xypo_All_Images/images/menu.png" alt="" id="menuBtn" />
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const sideNav = document.getElementById('sideNav');
+      sideNav.style.width = '250px';
+      menuBtn.onclick = function () {
+        if (sideNav.style.width == '250px') {
+          sideNav.style.width = '0px';
+        } else {
+          sideNav.style.width = '250px';
+        }
+      };
+    </script>
   </body>
 </html>
